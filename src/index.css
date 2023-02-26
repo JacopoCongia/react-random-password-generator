@@ -73,6 +73,7 @@ hr {
   line-height: 39px;
   border-radius: 6px;
   text-align: center;
+  cursor: pointer;
 }
 
 .foundation--password-two {

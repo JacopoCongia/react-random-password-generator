@@ -31,8 +31,8 @@ export default function Foundation() {
             <Button handleClick={handleClick}/>
             <hr />
             <div className="foundation--passwords-container">
-                <div className="foundation--password-one">{passwords.passwordOne}</div>
-                <div className="foundation--password-two">{passwords.passwordTwo}</div>
+                <div onClick={() => {navigator.clipboard.writeText(passwords.passwordOne)}} className="foundation--password-one">{passwords.passwordOne}</div>
+                <div onClick={() => {navigator.clipboard.writeText(passwords.passwordTwo)}} className="foundation--password-two">{passwords.passwordTwo}</div>
             </div>
         </section>
     )
